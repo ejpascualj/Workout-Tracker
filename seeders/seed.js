@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const db = require('../models');
 
 mongoose.connect(
+  // process.env.MONGODB_URI || "mongodb+srv://stamm-admin:wrNn2jjDCX23qoxz@cluster0.luteo.mongodb.net/workout?retryWrites=true&w=majority",
   process.env.MONGODB_URI || "mongodb://localhost/workout",
   {
     useNewUrlParser: true,
